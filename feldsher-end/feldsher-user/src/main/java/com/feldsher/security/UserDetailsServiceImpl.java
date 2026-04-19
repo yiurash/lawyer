@@ -23,7 +23,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String phone) throws UsernameNotFoundException {
         User user = userMapper.selectOne(
-                com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper.<User>lambdaQuery()
+                new com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper<User>()
                         .eq(User::getPhone, phone)
                         .eq(User::getDeleted, 0)
         );
