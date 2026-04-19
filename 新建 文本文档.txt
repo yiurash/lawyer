@@ -1,0 +1,10 @@
+1.
+我现在正在进行一个从0到1的项目。项目核心是做一个关于医疗知识的AI问答项目。
+项目分为用户管理及AI问答模块。请在当前的目录下创建feldsher_end后端工程，工程下创建feldsher-user和feldsher-ai两个模块。
+首先我确定项目核心框架采用springboot + springAI + mysql + mybtaisplus + redis+ maven的主流项目架构。LLM模型使用千问。
+项目整体使用扁平化架构：即controller 、service\impl + dao +  entity + dto + vo。
+本轮中我需要你在feldsher-user模块下实现用户的登录认证模块功能。该模块使用springsecurity + jwt做t登录认证。用户角色暂时分为医生和患者两种。
+请为我设计用户模块的数据库结构，给我对应的DDL语句。包括用户表、角色表等。
+并实现相关接口。
+接口需至少包括：注册、登录、获取根据token用户信息，其余可根据必要自行扩展。
+其中注册是需要用户填写其手机号和密码。密码需做弱密码校验。
