@@ -21,7 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>3.2.5</spring-boot.version>
-        <spring-ai.version>1.0.0-M5</spring-ai.version>
+        <spring-ai.version>1.0.0-RC1</spring-ai.version>
         <mybatis-plus.version>3.5.5</mybatis-plus.version>
         <druid.version>1.2.21</druid.version>
         <jwt.version>0.12.5</jwt.version>
@@ -113,6 +113,25 @@
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
             <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>aliyun</id>
+            <name>Aliyun Repository</name>
+            <url>https://maven.aliyun.com/repository/public</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
